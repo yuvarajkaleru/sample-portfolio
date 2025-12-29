@@ -1,58 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Yuvaraj Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvaraj Vanjari - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 50px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 250px;
+            border-radius: 15px;
+            border: 4px solid #667eea;
+            object-fit: cover;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .about-section {
+            margin-bottom: 40px;
+        }
+
+        .about-section h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .about-section p {
+            line-height: 1.8;
+            font-size: 1em;
+            color: #444;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlights {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .highlights ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .highlights li {
+            padding: 8px 0;
+            color: #555;
+        }
+
+        .highlights li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #667eea;
+            color: #667eea;
+            font-weight: 500;
+        }
+    </style>
 </head>
 
-<body bgcolor="#f2f7ff" text="black">
+<body>
+    <div class="container">
+        <header>
+            <img src="pass.jpg" alt="Yuvaraj Vanjari Profile Photo" class="profile-image">
+            <h1>YUVARAJ VANJARI</h1>
+            <p class="subtitle">Software Engineer & Web Developer</p>
+        </header>
 
-    <h1 align="center">
-        <font face="Georgia" color="#0b3d91">
-            <u>YUVARAJ PORTFOLIO</u>
-        </font>
-    </h1>
+        <section class="about-section">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Yuvaraj Vanjari, a dedicated software engineer with a strong interest in web development and 
+                computer science. I am currently pursuing my studies in CSBS, with a passion for programming and algorithmic 
+                problem-solving.
+            </p>
+            
+            <div class="highlights">
+                <ul>
+                    <li>Strong proficiency in Python, with focus on graph algorithms and simulations</li>
+                    <li>Short-term goal: Become a skilled Front-end Developer</li>
+                    <li>Task-oriented learner who values clarity and persistence</li>
+                    <li>Committed to connecting theory with practical applications</li>
+                </ul>
+            </div>
+        </section>
 
-    <div align="center">
-        <img src="pass.jpg" alt="Yuvaraj Photo" width="200" height="250"
-            style="border-radius: 10px; border: 3px solid #0b3d91;">
-    </div>
+        <section class="about-section">
+            <h2>My Philosophy</h2>
+            <p>
+                Beyond academics, I am passionate about applying theoretical concepts to real-world scenarios. 
+                I thrive on tackling challenging problems that allow me to combine logical reasoning with creativity. 
+                As a persistent learner, I value clarity and structure, believing that consistent practice and curiosity 
+                are the keys to mastering complex subjects.
+            </p>
+            <p>
+                My long-term aspiration is to use my technical skills to contribute to innovative projects that solve 
+                practical problems and make a meaningful impact in the tech industry.
+            </p>
+        </section>
 
-    <br>
-
-    <font face="Times New Roman" size="4" color="#333333">
-        <p align="center">
-            Hello! I am <b>Yuvaraj Vanjari</b>, a dedicated software engineer with a strong interest in
-            web development. <br>
-            <FONT Size=4FACE="TimesNewRoman" COLOR="black">My name is Darshan G , I am currently pursuing my studies in
-                CSBS, with a strong interest in programming and algorithmic problem-solving. <br> I enjoy working with
-                python language, especially on graph algorithms and simulations. <br> My short-term goal is to become a
-                Front-end Developer. <br>I am a task-oriented learner who values clarity and persistence, and I always
-                try to connect theory with practical applications.</FONT>
-        </P>
-        <P align="center">
-            <FONT size=4FACE="TimesNewRoman" COLOR="black">Beyond academics, I am passionate about applying theoretical
-                concepts to real-world scenarios. <br>I enjoy tackling challenging problems, because they allow me to
-                combine logical reasoning with creativity. <br>I see myself as a persistent learner who values clarity
-                and structure, and I believe that consistent practice and curiosity are the keys to mastering complex
-                subjects. <br> My long-term aspiration is to use my technical skills to contribute to innovative
-                projects that solve practical problems and make a meaningful impact.</FONT>
-        </P>
-        <div align="center" style="margin-top: 20px;">
-        <a href="https://github.com/yuvarajkaleru" style="text-decoration: none; background-color: #0b3d91; color: white; padding: 7px 15px; border-radius: 5px;">
-            <b>Visit My GitHub Profile</b>
-        </a>
+        <div class="button-container">
+            <a href="https://github.com/yuvarajkaleru" class="cta-button">Visit My GitHub Profile</a>
         </div>
-        </p>
 
-        <br>
-
-        <h3 align="center">
-            <font color="#0b3d91">
-                Thank you for visiting my portfolio page!
-            </font>
-        </h3>
-    </font>
-
+        <footer>
+            <p>Thank you for visiting my portfolio! Let's connect and build something amazing together.</p>
+        </footer>
+    </div>
 </body>
+
 </html>
